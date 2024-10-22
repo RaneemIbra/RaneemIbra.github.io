@@ -1,12 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const fadeInElements = document.querySelectorAll(".fade-in");
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("active");
-      }
-    });
+// You can add animations here
+window.addEventListener("load", () => {
+  const skillCards = document.querySelectorAll(".skill-card");
+  const projectCards = document.querySelectorAll(".project-card");
+
+  skillCards.forEach((card) => {
+    card.style.opacity = 0;
+    setTimeout(() => {
+      card.style.opacity = 1;
+    }, 300);
   });
 
-  fadeInElements.forEach((el) => observer.observe(el));
+  projectCards.forEach((card) => {
+    card.style.opacity = 0;
+    setTimeout(() => {
+      card.style.opacity = 1;
+    }, 500);
+  });
 });
