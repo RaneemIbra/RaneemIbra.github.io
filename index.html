@@ -3,10 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raneem Ibraheem - Portfolio</title>
+    <meta name="description" content="Portfolio of Raneem Ibraheem" />
+    <title>Raneem Ibraheem Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Header Section -->
     <header>
       <nav>
         <ul>
@@ -15,115 +17,95 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#education">Education</a></li>
-          <li><a href="#contact">Contact Me</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- About Section -->
     <section id="about">
       <h1>Raneem Ibraheem</h1>
       <p>
-        Fourth-year Computer Science student with a passion for AI, Android
-        development, and solving real-world problems.
+        A passionate computer science student with expertise in full-stack
+        development, machine learning, and building real-world applications. I
+        enjoy solving complex problems and creating impactful solutions.
       </p>
-      <p>
-        I have developed mobile and web applications using a range of tools and
-        languages, including C, C++, Java, TypeScript, and Angular. I enjoy
-        using machine learning and AI to build intelligent systems.
-      </p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/raneem-ibraheem-b82b24297/"
-          >LinkedIn</a
-        >
-        |
-        <a href="https://github.com/RaneemIbra">GitHub</a>
-      </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills">
       <h2>Skills</h2>
-      <ul>
-        <li>Programming Languages: C, C++, Java, C#, JavaScript, TypeScript</li>
-        <li>Frameworks & Libraries: Angular, Firebase, TensorFlow Lite</li>
-        <li>Tools: Git, Android Studio, Visual Studio, IntelliJ IDEA</li>
-        <li>Databases: MySQL, Firestore</li>
-      </ul>
+      <div class="skill-container">
+        <div class="skill">
+          <p>JavaScript</p>
+          <div class="skill-bar" style="width: 85%"></div>
+        </div>
+        <div class="skill">
+          <p>Java</p>
+          <div class="skill-bar" style="width: 90%"></div>
+        </div>
+        <div class="skill">
+          <p>Machine Learning</p>
+          <div class="skill-bar" style="width: 80%"></div>
+        </div>
+      </div>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
       <h2>Projects</h2>
-      <div class="project">
-        <h3>AI Fitness App</h3>
-        <p>
-          An Android app integrating AI to generate personalized workout plans
-          based on user input. Developed with TensorFlow Lite, Java, and
-          Firebase.
-        </p>
-        <a href="https://github.com/RaneemIbra/FitnessApp">View on GitHub</a>
-      </div>
-      <div class="project">
-        <h3>Emergency Management System</h3>
-        <p>
-          A web-based application to manage and coordinate emergency responses
-          using Firebase, Angular, and TypeScript.
-        </p>
-        <a href="https://github.com/RaneemIbra/EmergencyApp">View on GitHub</a>
-      </div>
-      <div class="project">
-        <h3>Learning Management System</h3>
-        <p>
-          An interactive platform for managing learning resources and
-          assignments. Developed with Angular and Firebase.
-        </p>
-        <a href="https://github.com/RaneemIbra/LMS">View on GitHub</a>
+      <div class="project-container">
+        <div class="project-card">
+          <h3>Fitness App</h3>
+          <p>A full-featured app integrating AI to propose workout plans.</p>
+        </div>
+        <div class="project-card">
+          <h3>Emergency Management System</h3>
+          <p>Android app that manages emergency responses in real-time.</p>
+        </div>
+        <!-- Add more projects here -->
       </div>
     </section>
 
+    <!-- Experience Section -->
     <section id="experience">
       <h2>Experience</h2>
-      <p>
-        <strong>Tutor</strong> - Physics, Mathematics, and Programming |
-        ilit.institutional (2020 - Present)
-      </p>
+      <div class="timeline">
+        <div class="timeline-event">
+          <h3>Software Developer Intern</h3>
+          <p>
+            Developed a learning management system using Angular and Firebase.
+          </p>
+        </div>
+        <!-- Add more experience entries -->
+      </div>
     </section>
 
+    <!-- Education Section -->
     <section id="education">
-      <h2>Education & Certifications</h2>
+      <h2>Education</h2>
       <p>
-        <strong>Technion – Israel Institute of Technology</strong> - B.Sc. in
-        Computer Science
+        B.Sc. in Computer Science from Technion – Israel Institute of Technology
       </p>
-      <p>Relevant coursework: Algorithms, Machine Learning, AI</p>
-      <p>Certifications:</p>
-      <ul>
-        <li>Foundational C# with Microsoft</li>
-        <li>Front End Development Libraries</li>
-        <li>AI integration with Android</li>
-      </ul>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
       <h2>Contact Me</h2>
       <form
-        action="mailto:raneem@example.com"
-        method="POST"
-        enctype="multipart/form-data"
+        action="mailto:your-email@example.com"
+        method="post"
+        enctype="text/plain"
       >
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Your Email:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-
+        <input type="text" name="name" placeholder="Your Name" />
+        <input type="email" name="email" placeholder="Your Email" />
+        <textarea name="message" placeholder="Your Message"></textarea>
         <button type="submit">Send Message</button>
       </form>
     </section>
 
     <footer>
-      <p>© 2024 Raneem Ibraheem</p>
+      <p>&copy; 2024 Raneem Ibraheem</p>
     </footer>
 
     <script src="scripts.js"></script>
