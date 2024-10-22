@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio of Raneem Ibraheem" />
-    <title>Raneem Ibraheem Portfolio</title>
+    <title>Raneem's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- Header Section -->
     <header>
       <nav>
         <ul>
@@ -22,91 +24,86 @@
       </nav>
     </header>
 
-    <!-- About Section -->
-    <section id="about">
+    <section id="about" class="fade-in">
       <h1>Raneem Ibraheem</h1>
       <p>
-        A passionate computer science student with expertise in full-stack
-        development, machine learning, and building real-world applications. I
-        enjoy solving complex problems and creating impactful solutions.
+        Fourth-year Computer Science student passionate about developing
+        software solutions for real-world problems. Experienced in building
+        full-stack web and mobile applications and integrating AI technologies.
       </p>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="fade-in">
       <h2>Skills</h2>
-      <div class="skill-container">
-        <div class="skill">
-          <p>JavaScript</p>
-          <div class="skill-bar" style="width: 85%"></div>
-        </div>
-        <div class="skill">
-          <p>Java</p>
-          <div class="skill-bar" style="width: 90%"></div>
-        </div>
-        <div class="skill">
-          <p>Machine Learning</p>
-          <div class="skill-bar" style="width: 80%"></div>
-        </div>
-      </div>
+      <ul>
+        <li>C, C++, Java, C#</li>
+        <li>JavaScript, TypeScript, Angular</li>
+        <li>SQL, MySQL, Firebase</li>
+        <li>TensorFlow, AI, Python</li>
+        <li>Android Development</li>
+      </ul>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
+    <section id="projects" class="fade-in">
       <h2>Projects</h2>
-      <div class="project-container">
-        <div class="project-card">
-          <h3>Fitness App</h3>
-          <p>A full-featured app integrating AI to propose workout plans.</p>
-        </div>
-        <div class="project-card">
-          <h3>Emergency Management System</h3>
-          <p>Android app that manages emergency responses in real-time.</p>
-        </div>
-        <!-- Add more projects here -->
+      <div class="project">
+        <h3>Fitness Application</h3>
+        <p>
+          Developed an AI-powered full-stack fitness app using Java, XML,
+          Python, and TensorFlow for personalized workout recommendations.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Emergency Management System</h3>
+        <p>
+          Java, SQL, OCSF-based emergency system allowing communication between
+          clients and responders.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Learning Management System</h3>
+        <p>
+          Built a web-based LMS using Angular and Firebase for streamlined
+          course management and user interaction.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Shortest Path Finder</h3>
+        <p>
+          Developed a pathfinding algorithm with Angular, TypeScript, and React
+          for real-time route optimization.
+        </p>
       </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience">
+    <section id="experience" class="fade-in">
       <h2>Experience</h2>
-      <div class="timeline">
-        <div class="timeline-event">
-          <h3>Software Developer Intern</h3>
-          <p>
-            Developed a learning management system using Angular and Firebase.
-          </p>
-        </div>
-        <!-- Add more experience entries -->
-      </div>
+      <ul>
+        <li>
+          <strong>Tsofen (07/2024 - 09/2024)</strong>: Developed AI-integrated
+          Android apps.
+        </li>
+        <li>
+          <strong>Ilit Institution (12/2020 - 03/2023)</strong>: Tutored
+          students in physics and mathematics.
+        </li>
+      </ul>
     </section>
 
-    <!-- Education Section -->
-    <section id="education">
+    <section id="education" class="fade-in">
       <h2>Education</h2>
-      <p>
-        B.Sc. in Computer Science from Technion – Israel Institute of Technology
-      </p>
+      <p>University of Haifa – B.Sc. in Computer Science</p>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <form
-        action="mailto:your-email@example.com"
-        method="post"
-        enctype="text/plain"
-      >
-        <input type="text" name="name" placeholder="Your Name" />
-        <input type="email" name="email" placeholder="Your Email" />
-        <textarea name="message" placeholder="Your Message"></textarea>
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </section>
-
-    <footer>
-      <p>&copy; 2024 Raneem Ibraheem</p>
-    </footer>
 
     <script src="scripts.js"></script>
   </body>
