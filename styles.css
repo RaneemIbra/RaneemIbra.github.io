@@ -19,17 +19,23 @@ header {
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: flex-start;
+  flex-direction: row; /* Horizontal layout for image and intro */
+  max-width: 1200px;
+  width: 100%;
+}
+
+.profile-image {
+  flex: 0 0 200px; /* Keep image fixed width */
+  margin-right: 30px;
 }
 
 .profile-image img {
   border-radius: 50%;
-  width: 180px;
-  height: 180px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px;
 }
 
 .intro h1 {
@@ -47,7 +53,6 @@ header {
 .intro p {
   color: #a0a0a0;
   max-width: 700px;
-  text-align: center;
 }
 
 /* Skills Section */
